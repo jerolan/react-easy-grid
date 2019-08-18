@@ -1,0 +1,61 @@
+{
+  "name": "react-easy-grid",
+  "version": "0.1.0",
+  "main": "build/index.js",
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.0.1",
+    "styled-components": "^4.3.2",
+    "typescript": "3.5.3"
+  },
+  "scripts": {
+    "start": "yarn storybook",
+    "storybook": "start-storybook -p 6006 -c .storybook",
+    "build": "tsc --project tsconfig.build.json",
+    "test": "react-scripts test --watchAll=false",
+    "coverage": "yarn test -- --coverage"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/stories"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@storybook/react": "^5.1.9",
+    "@types/jest": "24.0.15",
+    "@types/node": "12.6.2",
+    "@types/react": "16.8.23",
+    "@types/react-dom": "16.8.4",
+    "@types/react-test-renderer": "^16.8.2",
+    "@types/storybook__react": "^4.0.2",
+    "@types/styled-components": "4.1.8",
+    "awesome-typescript-loader": "^5.2.1",
+    "react-docgen-typescript-loader": "^3.1.0",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "react-test-renderer": "^16.8.6"
+  }
+}
