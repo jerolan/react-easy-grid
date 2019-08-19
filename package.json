@@ -17,6 +17,7 @@
   "scripts": {
     "start": "yarn storybook",
     "storybook": "start-storybook -p 6006 -c .storybook",
+    "storybook-build": "build-storybook --output-dir docs",
     "build": "tsc --project tsconfig.build.json",
     "test": "react-scripts test --watchAll=false",
     "coverage": "yarn test -- --coverage",
