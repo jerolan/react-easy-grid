@@ -1,6 +1,6 @@
 {
-  "name": "react-easy-grid",
-  "version": "0.0.0-development",
+  "name": "react-anatomy",
+  "version": "1.0.0",
   "main": "build/index.js",
   "module": "build/index.js",
   "files": [
@@ -95,7 +95,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jerolan/react-easy-grid.git"
+    "url": "git@github.com:jerolan/react-anatomy.git"
   },
   "config": {
     "commitizen": {

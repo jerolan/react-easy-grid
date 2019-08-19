@@ -1,4 +1,6 @@
-# React Easy Grid
+# React Anatomy
+
+react-easy-grid was ocuped
 
 This is a port from [react-native-easy-grid](https://github.com/GeekyAnts/react-native-easy-grid) for React Web.
 Just because i like it and i think it's simplier than copy-and-paste my own flex rules from my other projects.
@@ -7,7 +9,7 @@ I added support for break points with the media queries from [Bootstrap](https:/
 ## Installation
 
 ```
-npm install react-easy-grid --save
+npm install react-anatomy --save
 ```
 
 ## Usage
@@ -15,7 +17,7 @@ npm install react-easy-grid --save
 ### Include the components
 
 ```
-import { Col, Row, Grid } from "react-easy-grid";
+import { Col, Row, Grid } from "react-anatomy";
 ```
 
 ### 1. Two columns (50% and 50%)
@@ -169,7 +171,9 @@ This is exactly same as
 ```
 
 #### Screen 1024 x 768 (Landscape)
+
 ![responsive-layout.png](examples/responsive-layout-landscape.png 'Responsive layout landscape example')
 
 #### Screen 1024 x 768 (Portrait)
+
 ![responsive-layout.png](examples/responsive-layout-portrait.png 'Responsive layout portrait example')
