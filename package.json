@@ -1,7 +1,12 @@
 {
   "name": "react-easy-grid",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "main": "build/index.js",
+  "module": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "private": false,
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -14,7 +19,9 @@
     "storybook": "start-storybook -p 6006 -c .storybook",
     "build": "tsc --project tsconfig.build.json",
     "test": "react-scripts test --watchAll=false",
-    "coverage": "yarn test -- --coverage"
+    "coverage": "yarn test -- --coverage",
+    "semantic-release": "semantic-release",
+    "commit": "npx git-cz"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -56,6 +63,50 @@
     "awesome-typescript-loader": "^5.2.1",
     "react-docgen-typescript-loader": "^3.1.0",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
-    "react-test-renderer": "^16.8.6"
+    "react-test-renderer": "^16.8.6",
+    "semantic-release": "^15.13.21",
+    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/commit-analyzer": "^6.2.0",
+    "@semantic-release/git": "^7.0.16",
+    "@semantic-release/release-notes-generator": "^7.2.1",
+    "cz-conventional-changelog": "3.0.2",
+    "husky": "^3.0.0",
+    "lerna": "^3.16.1",
+    "lint-staged": "^9.2.0",
+    "prettier": "^1.18.2",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jerolan/react-easy-grid.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/git"
+    ]
   }
 }
