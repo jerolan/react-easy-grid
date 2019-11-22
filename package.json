@@ -8,11 +8,11 @@
   ],
   "private": false,
   "dependencies": {
+    "styled-components": "^4.3.2"
+  },
+  "peerDependencies": {
     "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-scripts": "3.0.1",
-    "styled-components": "^4.3.2",
-    "typescript": "3.4.5"
+    "react-dom": "^16.9.0"
   },
   "scripts": {
     "start": "yarn storybook",
@@ -52,6 +52,8 @@
     ]
   },
   "devDependencies": {
+    "typescript": "3.4.5",
+    "react-scripts": "3.0.1",
     "@babel/core": "^7.5.4",
     "@storybook/react": "^5.1.9",
     "@types/jest": "24.0.15",
