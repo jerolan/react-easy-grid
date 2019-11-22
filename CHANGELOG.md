@@ -6,6 +6,14 @@
 - bump ([fe5b2a2](https://github.com/jerolan/react-anatomy/commit/fe5b2a2))
 - bump ([6d080d9](https://github.com/jerolan/react-anatomy/commit/6d080d9))
 
+# [1.1.0](https://github.com/jerolan/react-anatomy/compare/v1.0.0...v1.1.0) (2019-11-22)
+
+### Features
+
+- bump ([8bf0392](https://github.com/jerolan/react-anatomy/commit/8bf0392))
+- bump ([fe5b2a2](https://github.com/jerolan/react-anatomy/commit/fe5b2a2))
+- bump ([6d080d9](https://github.com/jerolan/react-anatomy/commit/6d080d9))
+
 # 1.0.0 (2019-11-22)
 
 ### Features
